@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="MyTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorControlNormal">#eaeeee</item>
+        <item name="colorControlActivated">@color/main</item>
+        <item name="colorControlHighlight">@color/main</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/sftext_regular</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/sftext_semibold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="txt_base">
+        <item name="android:maxLines">1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="btn_white" parent="txt_base">
+        <item name="android:background">@drawable/bg_button_white</item>
+        <item name="android:textColor">@color/main</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:fontFamily">@font/sftext_bold</item>
+        <item name="android:paddingStart">@dimen/_35sdp</item>
+        <item name="android:paddingEnd">@dimen/_35sdp</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="btn_border_white" parent="txt_base">
+        <item name="android:background">@drawable/bg_border_button_white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_15sdp</item>
+        <item name="android:fontFamily">@font/sftext_bold</item>
+        <item name="android:paddingStart">@dimen/_35sdp</item>
+        <item name="android:paddingEnd">@dimen/_35sdp</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

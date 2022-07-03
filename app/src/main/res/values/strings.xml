@@ -1,3 +1,17 @@
 <resources>
+
+    <!--App Name-->
     <string name="app_name">Chaty</string>
+
+    <!--Login Activity-->
+    <string name="login_activity_welcome">Welcome to Chaty</string>
+    <string name="login_activity_title">Where you can connect with people quickly</string>
+    <string name="login_activity_login">Log In</string>
+    <string name="login_activity_sign_up">Sign Up</string>
+
+
+    <!--Login Fragment-->
+    <string name="login_activity_sign_in">Sign In</string>
+    <string name="login_activity_hint_phone">Phone</string>
+    <string name="login_activity_hint_password">Password</string>
 </resources>

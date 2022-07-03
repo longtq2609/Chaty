@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:paddingHorizontal="@dimen/_15sdp"
+    tools:context=".login.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_chaty" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/sftext_bold"
+        android:gravity="center"
+        android:text="@string/login_activity_welcome"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/sftext_regular"
+        android:gravity="center"
+        android:text="@string/login_activity_title"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_intro"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/login_activity_login" />
+
+    <Button
+        android:id="@+id/btn_sign_up"
+        style="@style/btn_border_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/login_activity_sign_up" />
+</RelativeLayout>

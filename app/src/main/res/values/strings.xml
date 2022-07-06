@@ -10,10 +10,35 @@
     <string name="login_activity_sign_up">Sign Up</string>
 
 
-    <!--Login Fragment-->
-    <string name="login_activity_sign_in">Sign In</string>
-    <string name="login_activity_hint_phone">Phone</string>
-    <string name="login_activity_hint_password">Password</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--LoginPhone Fragment-->
+    <string name="login_fragment_sign_in">Sign In</string>
+    <string name="login_fragment_phone">Phone</string>
+    <string name="login_fragment_password">Password</string>
+    <string name="login_fragment_login">Login</string>
+    <string name="login_fragment_or">OR</string>
+
+
+    <!--Register Fragment-->
+    <string name="register_fragment_create">Create new account</string>
+    <string name="register_fragment_full_name">Full Name</string>
+    <string name="register_fragment_email">Email</string>
+    <string name="register_fragment_phone_number">Phone Number</string>
+    <string name="register_fragment_password">Password</string>
+    <string name="register_fragment_sign_up">Sign Up</string>
+
+    <!--Message Fragment-->
+    <string name="message_fragment_title">Chat</string>
+
+    <!--Contract Fragment-->
+    <string name="contract_fragment_title">Contract</string>
+
+    <!--Profile Fragment-->
+    <string name="profile_fragment_title">Profile</string>
+
+    <!--Menu Tab-->
+    <string name="menu_message">Message</string>
+    <string name="menu_contract">Contract</string>
+    <string name="menu_profile">Profile</string>
+
+
 </resources>

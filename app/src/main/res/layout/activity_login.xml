@@ -1,67 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/main"
-    android:paddingHorizontal="@dimen/_15sdp"
-    tools:context=".login.LoginActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-    <ImageView
-        android:id="@+id/img_logo"
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:src="@drawable/ic_ct_logo" />
-
-    <TextView
-        android:id="@+id/tv_welcome"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/img_logo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_50sdp"
-        android:fontFamily="@font/sftext_bold"
-        android:gravity="center"
-        android:text="@string/login_activity_welcome"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_20sdp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:background="@color/main">
 
-    <TextView
-        android:id="@+id/tv_intro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_welcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_12sdp"
-        android:fontFamily="@font/sftext_regular"
-        android:gravity="center"
-        android:text="@string/login_activity_title"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_15sdp" />
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
 
-    <Button
-        android:id="@+id/btn_login"
-        style="@style/btn_white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_sign_up"
-        android:layout_marginTop="@dimen/_25sdp"
-        android:padding="@dimen/_5sdp"
-        android:text="@string/login_activity_login" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_sign_up"
-        style="@style/btn_border_white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginTop="@dimen/_25sdp"
-        android:layout_marginBottom="@dimen/_130sdp"
-        android:padding="@dimen/_5sdp"
-        android:text="@string/login_activity_sign_up" />
-</RelativeLayout>
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@drawable/ic_ct_logo" />
+
+                <TextView
+                    android:id="@+id/tv_welcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_logo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:fontFamily="@font/sftext_bold"
+                    android:gravity="center"
+                    android:text="@string/login_activity_welcome"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_welcome"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/sftext_regular"
+                    android:gravity="center"
+                    android:text="@string/login_activity_title"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15sdp" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="@style/btn_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btn_sign_up"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/login_activity_login" />
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    style="@style/btn_border_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_130sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:text="@string/login_activity_sign_up" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</layout>

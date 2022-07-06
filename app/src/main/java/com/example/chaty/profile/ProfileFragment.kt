@@ -1,4 +1,4 @@
-package com.example.chaty.login.register
+package com.example.chaty.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,23 +8,27 @@ import android.view.ViewGroup
 import com.example.chaty.R
 
 
-class RegisterFragment : Fragment() {
+class ProfileFragment : Fragment() {
 
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_register, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
 
     companion object {
+
         @JvmStatic
         fun newInstance() =
-            RegisterFragment().apply {
+            ProfileFragment().apply {
 
             }
     }
-
-
 }

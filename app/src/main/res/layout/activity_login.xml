@@ -14,7 +14,8 @@
         android:layout_height="@dimen/_150sdp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo_chaty" />
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/ic_ct_logo" />
 
     <TextView
         android:id="@+id/tv_welcome"
@@ -27,7 +28,7 @@
         android:gravity="center"
         android:text="@string/login_activity_welcome"
         android:textColor="@color/white"
-        android:textSize="@dimen/_22sdp"
+        android:textSize="@dimen/_20sdp"
         android:textStyle="bold" />
 
     <TextView
@@ -41,16 +42,16 @@
         android:gravity="center"
         android:text="@string/login_activity_title"
         android:textColor="@color/white"
-        android:textSize="@dimen/_18sdp" />
+        android:textSize="@dimen/_15sdp" />
 
     <Button
         android:id="@+id/btn_login"
         style="@style/btn_white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_intro"
+        android:layout_above="@+id/btn_sign_up"
         android:layout_marginTop="@dimen/_25sdp"
-        android:padding="@dimen/_12sdp"
+        android:padding="@dimen/_5sdp"
         android:text="@string/login_activity_login" />
 
     <Button
@@ -58,8 +59,9 @@
         style="@style/btn_border_white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_login"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/_25sdp"
-        android:padding="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_130sdp"
+        android:padding="@dimen/_5sdp"
         android:text="@string/login_activity_sign_up" />
 </RelativeLayout>

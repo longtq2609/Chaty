@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android-project/Product/Chaty/app/src/main/res/drawable-v24/bg_circle_white.xml" value="0.2055" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1845" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/drawable/bg_border_button_white.xml" value="0.2055" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/drawable/bg_button_white.xml" value="0.2935" />
@@ -15,9 +16,11 @@
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_friend.xml" value="0.29102564102564105" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_individual.xml" value="0.29102564102564105" />
-        <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_login_phone.xml" value="0.3546875" />
+        <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_login_phone.xml" value="0.25" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_message.xml" value="0.29102564102564105" />
+        <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_profile.xml" value="0.29102564102564105" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/fragment_register.xml" value="0.3546875" />
+        <entry key="..\:/android-project/Product/Chaty/app/src/main/res/layout/layout_chatty_progress.xml" value="0.5" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/menu/menu_main.xml" value="0.2873417721518987" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1845" />
         <entry key="..\:/android-project/Product/Chaty/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1845" />

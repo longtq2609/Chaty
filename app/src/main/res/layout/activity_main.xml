@@ -20,9 +20,9 @@
             android:layout_height="?android:attr/actionBarSize"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            app:labelVisibilityMode="unlabeled"
             android:background="@color/white"
             app:itemIconTint="@color/bg_icon_bottom_nav"
+            app:labelVisibilityMode="unlabeled"
             app:menu="@menu/menu_main" />
     </RelativeLayout>
 </layout>

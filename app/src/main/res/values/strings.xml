@@ -39,6 +39,7 @@
     <string name="menu_message">Message</string>
     <string name="menu_contract">Contract</string>
     <string name="menu_profile">Profile</string>
+    <string name="progress_is_loading">Loading…</string>
 
 
 </resources>

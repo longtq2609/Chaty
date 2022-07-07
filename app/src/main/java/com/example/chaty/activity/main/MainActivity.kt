@@ -1,32 +1,21 @@
-package com.example.chaty
+package com.example.chaty.activity.main
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.chaty.contract.ContractFragment
+import com.example.chaty.R
+import com.example.chaty.core.CoreActivity
 import com.example.chaty.databinding.ActivityMainBinding
-import com.example.chaty.message.MessageFragment
-import com.example.chaty.profile.ProfileFragment
+import com.example.chaty.fragment.contract.ContractFragment
+import com.example.chaty.fragment.message.MessageFragment
+import com.example.chaty.fragment.profile.ProfileFragment
 
-class MainActivity : AppCompatActivity() {
-    private lateinit var viewBinding: ActivityMainBinding
+class MainActivity : CoreActivity<ActivityMainBinding>() {
     private lateinit var fragmentManager: FragmentManager
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        viewBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        init()
-    }
-
-    private fun init() {
-        setupBottomNavigation()
-    }
 
     private fun setupBottomNavigation() {
         fragmentManager = supportFragmentManager
         setCurrentFragment(MessageFragment.newInstance())
-        viewBinding.ahTabContain.setOnNavigationItemSelectedListener {
+        activityViewBinding.ahTabContain.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.tab_message -> {
                     setCurrentFragment(
@@ -51,5 +40,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun setCurrentFragment(fragment: Fragment) {
         fragmentManager.beginTransaction().replace(R.id.frame_layout, fragment).commit()
+    }
+
+    override fun getLayoutId() = R.layout.activity_main
+    override fun listener() {
+        setupBottomNavigation()
+    }
+
+    override fun setupView() {
     }
 }
